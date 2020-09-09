@@ -188,7 +188,7 @@ RUN \
     unzip aquatone.zip -d aquatone  && \
     rm aquatone.zip && \
 # Install amass
-    wget --quiet https://github.com/OWASP/Amass/releases/download/v3.10.2/amass_linux_amd64.zip -O amass.zip && \
+    wget --quiet https://github.com/OWASP/Amass/releases/download/v3.10.3/amass_linux_amd64.zip -O amass.zip && \
     unzip amass.zip -d amass && \
     rm amass.zip && \
 # Download Sublist3r
@@ -292,7 +292,7 @@ RUN \
 # Install otxurls
     go get github.com/lc/otxurls && \
 # Install amass
-    ln -s /tools/recon/amass/amass_v3.5.5_linux_amd64/amass /usr/bin/amass && \
+    ln -s /tools/recon/amass/amass_linux_amd64/amass /usr/bin/amass && \
 # Install hakrevdns
     go get github.com/hakluke/hakrevdns && \
 # Install ffuf
@@ -346,7 +346,8 @@ RUN \
     git clone --depth 1 https://github.com/daviddias/node-dirbuster.git && \
     git clone --depth 1 https://github.com/v0re/dirb.git && \
     curl -L -o rockyou.txt https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt && \
-    curl -L -o all.txt https://gist.githubusercontent.com/jhaddix/86a06c5dc309d08580a018c66354a056/raw/96f4e51d96b2203f19f6381c8c545b278eaa0837/all.txt
+    curl -L -o all.txt https://gist.githubusercontent.com/jhaddix/86a06c5dc309d08580a018c66354a056/raw/96f4e51d96b2203f19f6381c8c545b278eaa0837/all.txt && \
+    curl -L -o fuzz.txt https://raw.githubusercontent.com/Bo0oM/fuzz.txt/master/fuzz.txt
 
 # WORDLIST
 FROM builder2 as builder3
