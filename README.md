@@ -4,7 +4,7 @@
   <a href="https://hub.docker.com/r/aaaguirrep/offensive-docker">
     <img
       alt="Offensive Docker"
-      src="img/banner.jpg"
+      src="https://github.com/aaaguirrep/offensive-docker/blob/master/img/banner.jpg"
       width="600"
     />
   </a>
@@ -360,7 +360,7 @@ You can use the docker image by the next two options:
 Use image from docker hub: [aaaguirrep/offensive-docker](https://hub.docker.com/r/aaaguirrep/offensive-docker)
 
     docker pull aaaguirrep/offensive-docker
-    docker run --rm -it --name my-offensive-docker offensive-docker /bin/zsh
+    docker run --rm -it --name my-offensive-docker aaaguirrep/offensive-docker /bin/zsh
 
 ### Considerations to run the container
 
@@ -464,7 +464,7 @@ Thanks for your donations, are always appreciated.
 
 While I drink the coffee I check more tools to add in the docker image.
 
-<a href="https://www.buymeacoffee.com/aaaguirrep" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" style="height: 23px !important; width: 100px !important;" ></a>
+[![Buy me a coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/aaaguirrep)
 
 ## Contributors
 
